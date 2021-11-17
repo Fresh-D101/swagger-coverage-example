@@ -4,8 +4,8 @@ plugins {
 }
 
 ext {
-    coverageDownloadUrl = 'https://dl.bintray.com/viclovsky/maven/com/github/viclovsky/swagger/coverage/swagger-coverage-commandline/1.3.0/swagger-coverage-commandline-1.3.0.zip'
-    coverageCommandline = './.coverage/swagger-coverage-commandline-1.3.0/bin/swagger-coverage-commandline'
+    coverageDownloadUrl = 'https://github.com/viclovsky/swagger-coverage/releases/download/1.4.3/swagger-coverage-1.4.3.zip'
+    coverageCommandline = './.coverage/swagger-coverage-commandline-1.4.3/bin/swagger-coverage-commandline'
     swaggerDownloadUrl = 'https://petstore.swagger.io/v2/swagger.json'
 
     coverageConfiguration = './coverage/configuration.json'
@@ -21,7 +21,6 @@ sourceCompatibility = 1.8
 repositories {
     mavenLocal()
     mavenCentral()
-    maven { url 'https://dl.bintray.com/viclovsky/maven/' }
 }
 
 task downloadSwagger(type: Download) {
